@@ -1,0 +1,26 @@
+{
+  "basePath": "/",
+  "baseUrl": "https://radar.aotoki.me",
+  "social": [
+    {
+      "icon": "facebook",
+      "href": "https://www.facebook.com/aotoki.me"
+    },
+    {
+      "icon": "github",
+      "href": "https://github.com/elct9620"
+    },
+    {
+      "icon": "linkedin",
+      "href": "https://www.linkedin.com/in/elct9620"
+    },
+    {
+      "icon": "twitter",
+      "href": "https://twitter.com/elct9620"
+    },
+    {
+      "icon": "youtube",
+      "href": "https://www.youtube.com/@aotoki"
+    }
+  ]
+}

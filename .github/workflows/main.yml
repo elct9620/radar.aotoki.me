@@ -14,23 +14,18 @@ jobs:
   build:
     name: Build Radar
     runs-on: ubuntu-latest
-    container: wwwthoughtworks/build-your-own-radar:v1.1.6
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install
+        run: npm install
       - name: Build
-        run: |
-          cd /src/build-your-own-radar
-          npm run build:prod
-      - name: Copy dist to public
-        run: |
-          mkdir -p $GITHUB_WORKSPACE/public
-          cp -r /src/build-your-own-radar/dist/* $GITHUB_WORKSPACE/public
-      - run: cd $GITHUB_WORKSPACE && ls -la
-      - name: Add radar.csv
-        run: |
-          mkdir -p $GITHUB_WORKSPACE/public/files
-          cp ./radar.csv $GITHUB_WORKSPACE/public/files
+        run: npm run build
+      - run: mv build public
       - name: Upload
         uses: actions/upload-pages-artifact@v3
         with:
