@@ -1,6 +1,10 @@
 {
   "basePath": "/",
   "baseUrl": "https://radar.aotoki.me",
+  "editUrl": "https://github.com/elct9620/radar.aotoki.me/edit/main/radar/{release}/{id}.md",
+  "labels": {
+    "pageAbout": "About"
+  },
   "social": [
     {
       "icon": "facebook",

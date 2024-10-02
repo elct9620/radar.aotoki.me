@@ -1,11 +1,5 @@
-# How to use the Technology Radar
+# About Aotokitsuruya Technology Radar
 
 ### Introduction
 
-Edit this file to your needs to provide an introduction to the technology radar. Explain the purpose
-of the radar and how it is created. This is a good place to explain the quadrants and rings, too.
-
-### Contributing to the AOE Technology Radar
-
-Contributions and source code of the AOE Tech Radar are on
-GitHub: [AOE Tech Radar on GitHub](https://github.com/AOEpeople/aoe_technology_radar)
+This [Aotokitsuruya](https://blog.aotoki.me) Technology Radar is a list of technologies that I am interested in and that I think are worth exploring. It is inspired by [ThoughtWorks Technology Radar](https://www.thoughtworks.com/radar). The radar has four rings: Adopt, Trial, Assess, and Hold.
