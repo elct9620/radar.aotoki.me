@@ -1,5 +1,5 @@
 ---
-title: "Ruby on Rails"
+title: "Clean Architecture"
 ring: adopt
 quadrant: methods-and-patterns
 tags: [coding]
