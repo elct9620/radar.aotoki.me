@@ -5,6 +5,70 @@
   "labels": {
     "pageAbout": "About"
   },
+  "colors": {
+    "background": "#0F2540",
+    "highlight": "#f9bf45"
+  },
+  "quadrants": [
+    {
+      "id": "languages-and-frameworks",
+      "title": "Languages & Frameworks",
+      "description": "This quadrant includes programming languages (e.g., Java and Golang) and frameworks (e.g., React and Spring Boot) that are at the core of custom software development.",
+      "color": "#84BFA4"
+    },
+    {
+      "id": "methods-and-patterns",
+      "title": "Methods & Patterns",
+      "description": "This quadrant covers methods and patterns related to software development, including architecture, security, testing, organizational methodologies, and more.",
+      "color": "#248EA6"
+    },
+    {
+      "id": "platforms-and-aoe-services",
+      "title": "Platforms & Operations",
+      "description": "This quadrant clusters technologies focused on the operation of software, related platforms, tools, infrastructure, and services.",
+      "color": "#F25244"
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "description": "This quadrant features a variety of tools, from small utilities to large-scale software projects.",
+      "color": "#F2A25C"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "title": "Adopt",
+      "description": "We can clearly recommend this technology. We have used it for longer period of time in many teams and it has proven to be stable and useful.",
+      "color": "#5cb449",
+      "radius": 0.5,
+      "strokeWidth": 5
+    },
+    {
+      "id": "trial",
+      "title": "Trial",
+      "description": "We have used it with success and recommend to have a closer look at the technology in this ring. The goal of items here is to look at them more closely, with the goal to bring them to the adopt level.",
+      "color": "#faa03d",
+      "radius": 0.69,
+      "strokeWidth": 3
+    },
+    {
+      "id": "assess",
+      "title": "Assess",
+      "description": "We have tried it out and we find it promising. We recommend having a look at these items when you face a specific need for the technology in your project.",
+      "color": "#029df7",
+      "radius": 0.85,
+      "strokeWidth": 2
+    },
+    {
+      "id": "hold",
+      "title": "Hold",
+      "description": "This category is a bit special. Unlike the others, we recommend to stop doing or using something. That does not mean that they are bad and it often might be ok to use them in existing projects. But we move things here if we think we shouldn't do them anymore - because we see better options or alternatives now.",
+      "color": "#688190",
+      "radius": 1,
+      "strokeWidth": 0.75
+    }
+  ],
   "social": [
     {
       "icon": "facebook",
