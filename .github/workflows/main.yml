@@ -19,13 +19,13 @@ jobs:
           npm run build:prod
       - name: Copy dist to public
         run: |
-          mkdir -p ${{ github.workspace }}/public
-          cp -r /src/build-your-own-radar/dist/* ${{ github.workspace }}/public
-      - run: cd ${{ github.workspace }} && ls -la
+          mkdir -p $GITHUB_WORKSPACE/public
+          cp -r /src/build-your-own-radar/dist/* $GITHUB_WORKSPACE/public
+      - run: cd $GITHUB_WORKSPACE && ls -la
       - name: Add radar.csv
         run: |
-          mkdir -p ${{ github.workspace }}/public/files
-          cp ./radar.csv ${{ github.workspace }}/public/files
+          mkdir -p $GITHUB_WORKSPACE/public/files
+          cp ./radar.csv $GITHUB_WORKSPACE/public/files
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
