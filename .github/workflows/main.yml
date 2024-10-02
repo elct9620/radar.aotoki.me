@@ -5,15 +5,11 @@ on:
     branches:
       - main
 
-env:
-  RADAR_VERSION: v1.1.6
-
 jobs:
   radar-template:
     name: Build Radar Template
     runs-on: ubuntu-latest
-    container:
-      image: wwwthoughtworks/build-your-own-radar:${{ env.RADAR_VERSION }}
+    container: wwwthoughtworks/build-your-own-radar:v1.1.6
     steps:
       - name: Build
         run: npm run build:prod
