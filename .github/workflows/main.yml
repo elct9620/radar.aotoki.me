@@ -32,12 +32,12 @@ jobs:
           mkdir -p $GITHUB_WORKSPACE/public/files
           cp ./radar.csv $GITHUB_WORKSPACE/public/files
       - name: Upload
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: public
           path: ./public
 
   deploy:
+    name: Deploy Radar
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
