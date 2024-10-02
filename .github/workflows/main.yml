@@ -1,0 +1,23 @@
+name: Build Radar
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  RADAR_VERSION: v1.1.6
+
+jobs:
+  radar-template:
+    name: Build Radar Template
+    runs-on: ubuntu-latest
+    container:
+      image: wwwthoughtworks/build-your-own-radar:${{ env.RADAR_VERSION }}
+    steps:
+      - name: Build
+        run: npm run build:prod
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: radar-template
