@@ -6,14 +6,27 @@ on:
       - main
 
 jobs:
-  radar-template:
-    name: Build Radar Template
+  build:
+    name: Build Radar
     runs-on: ubuntu-latest
     container: wwwthoughtworks/build-your-own-radar:v1.1.6
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Build
-        run: npm run build:prod
+        run: |
+          cd /src/build-your-own-radar
+          npm run build:prod
+      - name: Copy dist to public
+        run: |
+          mkdir -p ${{ github.workspace }}/public
+          cp -r /src/build-your-own-radar/dist/* ${{ github.workspace }}/public
+      - name: Add radar.csv
+        run: |
+          mkdir -p ${{ github.workspace }}/public/files
+          cp ./radar.csv ${{ github.workspace }}/public/files
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: radar-template
+          name: public
+          path: ./public
