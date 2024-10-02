@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/public
           cp -r /src/build-your-own-radar/dist/* ${{ github.workspace }}/public
-      - run: cd ${{ github.workspace }}/public && ls -la
+      - run: cd ${{ github.workspace }} && ls -la
       - name: Add radar.csv
         run: |
           mkdir -p ${{ github.workspace }}/public/files
