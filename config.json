@@ -3,8 +3,10 @@
   "baseUrl": "https://radar.aotoki.me",
   "editUrl": "https://github.com/elct9620/radar.aotoki.me/edit/main/radar/{release}/{id}.md",
   "labels": {
+    "title": "Aotokitsuruya's Technology Radar",
     "pageAbout": "About",
-    "footer": "Aotokitsuruya is a software engineer and open-source contributor from Taiwan."
+    "footer": "Aotokitsuruya is a software engineer and open-source contributor from Taiwan.",
+    "metaDescription": "Aotokitsuruya's Technology Radar to represent the technologies that I use or have used in the past."
   },
   "colors": {
     "background": "#0F2540",
