@@ -1,5 +1,5 @@
 ---
-title: "Golang"
+title: "Go / Golang"
 ring: adopt
 quadrant: languages-and-frameworks
 tags: [backend, coding]
