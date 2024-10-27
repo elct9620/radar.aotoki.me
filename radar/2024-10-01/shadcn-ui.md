@@ -1,6 +1,6 @@
 ---
 title: "shadcn/ui"
-ring: trial
+ring: assess
 quadrant: tools
 tags: [ui]
 ---

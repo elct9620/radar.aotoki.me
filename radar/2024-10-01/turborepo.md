@@ -1,6 +1,6 @@
 ---
 title: "turborepo"
-ring: trial
+ring: assess
 quadrant: tools
 tags: [coding]
 ---
