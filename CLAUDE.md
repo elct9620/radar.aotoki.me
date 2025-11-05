@@ -70,3 +70,5 @@ The site is deployed via GitHub Actions (`.github/workflows/main.yml`) to GitHub
 2. Add a `.md` file with proper frontmatter
 3. Ensure `ring` and `quadrant` values match those in `config.json`
 4. Build locally with `npm run build` to verify
+- Each rader usually use one line to introduce it's props
+- The radar usually group by H1 / H2, e.g. 2025-06-01 is 2025 H2
