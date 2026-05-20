@@ -132,3 +132,5 @@ dist
 # Techradar
 .techradar/
 .aider*
+
+build/
