@@ -1,6 +1,6 @@
 ---
 title: "aider"
-ring: trial
+ring: hold
 quadrant: tools
 tags: [ai, coding]
 featured: false
