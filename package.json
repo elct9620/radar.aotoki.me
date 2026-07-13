@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "aoe_technology_radar": "^4.6.1",
-    "tsx": "^4.23.0"
+    "tsx": "^4.23.1"
   }
 }
